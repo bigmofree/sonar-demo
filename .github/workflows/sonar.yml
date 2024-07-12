@@ -25,4 +25,14 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
-          
+
+      - name: initialize 
+        run: |
+          terraform init 
+
+
+      - name: apply 
+        run: |
+          echo "Hello"
+          # terraform apply -auto-approve 
+
